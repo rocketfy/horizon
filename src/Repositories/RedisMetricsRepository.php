@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Repositories;
+namespace Rocketfy\Horizon\Repositories;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
-use Laravel\Horizon\Contracts\MetricsRepository;
-use Laravel\Horizon\Lock;
-use Laravel\Horizon\LuaScripts;
-use Laravel\Horizon\WaitTimeCalculator;
+use Rocketfy\Horizon\Contracts\MetricsRepository;
+use Rocketfy\Horizon\Lock;
+use Rocketfy\Horizon\LuaScripts;
+use Rocketfy\Horizon\WaitTimeCalculator;
 
 class RedisMetricsRepository implements MetricsRepository
 {

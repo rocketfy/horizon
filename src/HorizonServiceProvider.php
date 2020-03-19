@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\Horizon;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Queue\QueueManager;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Laravel\Horizon\Connectors\RedisConnector;
+use Rocketfy\Horizon\Connectors\RedisConnector;
 
 class HorizonServiceProvider extends ServiceProvider
 {
@@ -51,7 +51,7 @@ class HorizonServiceProvider extends ServiceProvider
         Route::group([
             'domain' => config('horizon.domain', null),
             'prefix' => config('horizon.path'),
-            'namespace' => 'Laravel\Horizon\Http\Controllers',
+            'namespace' => 'Rocketfy\Horizon\Http\Controllers',
             'middleware' => config('horizon.middleware', 'web'),
         ], function () {
             $this->loadRoutesFrom(__DIR__.'/../routes/web.php');

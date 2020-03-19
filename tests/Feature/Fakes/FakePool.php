@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Fakes;
+namespace Rocketfy\Horizon\Tests\Feature\Fakes;
 
 class FakePool
 {

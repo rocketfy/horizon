@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\Horizon;
 
 use Illuminate\Support\Arr;
 

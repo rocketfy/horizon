@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon\Jobs;
+namespace Rocketfy\Horizon\Jobs;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Contracts\Queue\Factory as Queue;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\JobId;
+use Rocketfy\Horizon\Contracts\JobRepository;
+use Rocketfy\Horizon\JobId;
 
 class RetryFailedJob
 {
@@ -31,7 +31,7 @@ class RetryFailedJob
      * Execute the job.
      *
      * @param  \Illuminate\Contracts\Queue\Factory  $queue
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Rocketfy\Horizon\Contracts\JobRepository  $jobs
      * @return void
      */
     public function handle(Queue $queue, JobRepository $jobs)

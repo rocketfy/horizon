@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Fakes;
+namespace Rocketfy\Horizon\Tests\Feature\Fakes;
 
-use Laravel\Horizon\Supervisor;
+use Rocketfy\Horizon\Supervisor;
 
 class SupervisorWithFakeMonitor extends Supervisor
 {

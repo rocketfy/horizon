@@ -1,17 +1,17 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\Horizon\Listeners;
 
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Events\MasterSupervisorLooped;
+use Rocketfy\Horizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\Horizon\Contracts\SupervisorRepository;
+use Rocketfy\Horizon\Events\MasterSupervisorLooped;
 
 class ExpireSupervisors
 {
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\MasterSupervisorLooped  $event
+     * @param  \Rocketfy\Horizon\Events\MasterSupervisorLooped  $event
      * @return void
      */
     public function handle(MasterSupervisorLooped $event)

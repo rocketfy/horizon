@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Contracts;
+namespace Rocketfy\Horizon\Contracts;
 
 interface Restartable
 {

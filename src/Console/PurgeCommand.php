@@ -1,14 +1,14 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Rocketfy\Horizon\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\Contracts\ProcessRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\ProcessInspector;
+use Rocketfy\Horizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\Horizon\Contracts\ProcessRepository;
+use Rocketfy\Horizon\Contracts\SupervisorRepository;
+use Rocketfy\Horizon\MasterSupervisor;
+use Rocketfy\Horizon\ProcessInspector;
 
 class PurgeCommand extends Command
 {
@@ -27,26 +27,26 @@ class PurgeCommand extends Command
     protected $description = 'Terminate any rogue Horizon processes';
 
     /**
-     * @var \Laravel\Horizon\Contracts\SupervisorRepository
+     * @var \Rocketfy\Horizon\Contracts\SupervisorRepository
      */
     private $supervisors;
 
     /**
-     * @var \Laravel\Horizon\Contracts\ProcessRepository
+     * @var \Rocketfy\Horizon\Contracts\ProcessRepository
      */
     private $processes;
 
     /**
-     * @var \Laravel\Horizon\ProcessInspector
+     * @var \Rocketfy\Horizon\ProcessInspector
      */
     private $inspector;
 
     /**
      * Create a new command instance.
      *
-     * @param  \Laravel\Horizon\Contracts\SupervisorRepository  $supervisors
-     * @param  \Laravel\Horizon\Contracts\ProcessRepository  $processes
-     * @param  \Laravel\Horizon\ProcessInspector  $inspector
+     * @param  \Rocketfy\Horizon\Contracts\SupervisorRepository  $supervisors
+     * @param  \Rocketfy\Horizon\Contracts\ProcessRepository  $processes
+     * @param  \Rocketfy\Horizon\ProcessInspector  $inspector
      * @return void
      */
     public function __construct(
@@ -64,7 +64,7 @@ class PurgeCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param  \Laravel\Horizon\Contracts\MasterSupervisorRepository  $masters
+     * @param  \Rocketfy\Horizon\Contracts\MasterSupervisorRepository  $masters
      * @return void
      */
     public function handle(MasterSupervisorRepository $masters)

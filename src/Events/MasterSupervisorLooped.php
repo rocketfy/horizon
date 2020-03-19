@@ -1,22 +1,22 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Rocketfy\Horizon\Events;
 
-use Laravel\Horizon\MasterSupervisor;
+use Rocketfy\Horizon\MasterSupervisor;
 
 class MasterSupervisorLooped
 {
     /**
      * The master supervisor instance.
      *
-     * @var \Laravel\Horizon\MasterSupervisor
+     * @var \Rocketfy\Horizon\MasterSupervisor
      */
     public $master;
 
     /**
      * Create a new event instance.
      *
-     * @param  \Laravel\Horizon\MasterSupervisor  $master
+     * @param  \Rocketfy\Horizon\MasterSupervisor  $master
      * @return void
      */
     public function __construct(MasterSupervisor $master)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Unit;
+namespace Rocketfy\Horizon\Tests\Unit;
 
 use Illuminate\Broadcasting\BroadcastEvent;
 use Illuminate\Contracts\Mail\Mailable;
@@ -8,17 +8,17 @@ use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Events\CallQueuedListener;
 use Illuminate\Mail\SendQueuedMailable;
 use Illuminate\Notifications\SendQueuedNotifications;
-use Laravel\Horizon\JobPayload;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeEvent;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeEventWithModel;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeJobWithEloquentCollection;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeJobWithEloquentModel;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeJobWithTagsMethod;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeListener;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeListenerWithProperties;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeListenerWithTypedProperties;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeModel;
-use Laravel\Horizon\Tests\UnitTest;
+use Rocketfy\Horizon\JobPayload;
+use Rocketfy\Horizon\Tests\Unit\Fixtures\FakeEvent;
+use Rocketfy\Horizon\Tests\Unit\Fixtures\FakeEventWithModel;
+use Rocketfy\Horizon\Tests\Unit\Fixtures\FakeJobWithEloquentCollection;
+use Rocketfy\Horizon\Tests\Unit\Fixtures\FakeJobWithEloquentModel;
+use Rocketfy\Horizon\Tests\Unit\Fixtures\FakeJobWithTagsMethod;
+use Rocketfy\Horizon\Tests\Unit\Fixtures\FakeListener;
+use Rocketfy\Horizon\Tests\Unit\Fixtures\FakeListenerWithProperties;
+use Rocketfy\Horizon\Tests\Unit\Fixtures\FakeListenerWithTypedProperties;
+use Rocketfy\Horizon\Tests\Unit\Fixtures\FakeModel;
+use Rocketfy\Horizon\Tests\UnitTest;
 use Mockery;
 use StdClass;
 

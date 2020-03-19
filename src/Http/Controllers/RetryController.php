@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Rocketfy\Horizon\Http\Controllers;
 
-use Laravel\Horizon\Jobs\RetryFailedJob;
+use Rocketfy\Horizon\Jobs\RetryFailedJob;
 
 class RetryController extends Controller
 {

@@ -1,22 +1,22 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Rocketfy\Horizon\Http\Controllers;
 
-use Laravel\Horizon\Contracts\MetricsRepository;
+use Rocketfy\Horizon\Contracts\MetricsRepository;
 
 class QueueMetricsController extends Controller
 {
     /**
      * The metrics repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\MetricsRepository
+     * @var \Rocketfy\Horizon\Contracts\MetricsRepository
      */
     public $metrics;
 
     /**
      * Create a new controller instance.
      *
-     * @param  \Laravel\Horizon\Contracts\MetricsRepository  $metrics
+     * @param  \Rocketfy\Horizon\Contracts\MetricsRepository  $metrics
      * @return void
      */
     public function __construct(MetricsRepository $metrics)

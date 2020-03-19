@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\Horizon\Tests\Feature;
 
-use Laravel\Horizon\Contracts\ProcessRepository;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\Horizon\Contracts\ProcessRepository;
+use Rocketfy\Horizon\Tests\IntegrationTest;
 
 class ProcessRepositoryTest extends IntegrationTest
 {

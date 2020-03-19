@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\Horizon\Tests\Feature;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Support\Facades\Event;
-use Laravel\Horizon\Events\UnableToLaunchProcess;
-use Laravel\Horizon\Events\WorkerProcessRestarting;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\WorkerProcess;
+use Rocketfy\Horizon\Events\UnableToLaunchProcess;
+use Rocketfy\Horizon\Events\WorkerProcessRestarting;
+use Rocketfy\Horizon\Tests\IntegrationTest;
+use Rocketfy\Horizon\WorkerProcess;
 use Symfony\Component\Process\Process;
 
 class WorkerProcessTest extends IntegrationTest

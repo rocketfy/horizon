@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\Horizon\Tests\Feature;
 
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\MasterSupervisorCommands\AddSupervisor;
-use Laravel\Horizon\PhpBinary;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\Horizon\Contracts\HorizonCommandQueue;
+use Rocketfy\Horizon\MasterSupervisor;
+use Rocketfy\Horizon\MasterSupervisorCommands\AddSupervisor;
+use Rocketfy\Horizon\PhpBinary;
+use Rocketfy\Horizon\SupervisorOptions;
+use Rocketfy\Horizon\Tests\IntegrationTest;
 
 class AddSupervisorTest extends IntegrationTest
 {

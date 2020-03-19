@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon\SupervisorCommands;
+namespace Rocketfy\Horizon\SupervisorCommands;
 
-use Laravel\Horizon\Contracts\Pausable;
+use Rocketfy\Horizon\Contracts\Pausable;
 
 class Pause
 {
     /**
      * Process the command.
      *
-     * @param  \Laravel\Horizon\Contracts\Pausable  $pausable
+     * @param  \Rocketfy\Horizon\Contracts\Pausable  $pausable
      * @return void
      */
     public function process(Pausable $pausable)

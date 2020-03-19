@@ -1,22 +1,22 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Rocketfy\Horizon\Events;
 
-use Laravel\Horizon\WorkerProcess;
+use Rocketfy\Horizon\WorkerProcess;
 
 class UnableToLaunchProcess
 {
     /**
      * The worker process instance.
      *
-     * @var \Laravel\Horizon\WorkerProcess
+     * @var \Rocketfy\Horizon\WorkerProcess
      */
     public $process;
 
     /**
      * Create a new event instance.
      *
-     * @param  \Laravel\Horizon\WorkerProcess  $process
+     * @param  \Rocketfy\Horizon\WorkerProcess  $process
      * @return void
      */
     public function __construct(WorkerProcess $process)

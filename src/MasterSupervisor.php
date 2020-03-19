@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\Horizon;
 
 use Cake\Chronos\Chronos;
 use Closure;
@@ -8,13 +8,13 @@ use Exception;
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Support\Str;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\Contracts\Pausable;
-use Laravel\Horizon\Contracts\Restartable;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\Terminable;
-use Laravel\Horizon\Events\MasterSupervisorLooped;
+use Rocketfy\Horizon\Contracts\HorizonCommandQueue;
+use Rocketfy\Horizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\Horizon\Contracts\Pausable;
+use Rocketfy\Horizon\Contracts\Restartable;
+use Rocketfy\Horizon\Contracts\SupervisorRepository;
+use Rocketfy\Horizon\Contracts\Terminable;
+use Rocketfy\Horizon\Events\MasterSupervisorLooped;
 use Symfony\Component\Debug\Exception\FatalThrowableError;
 use Throwable;
 

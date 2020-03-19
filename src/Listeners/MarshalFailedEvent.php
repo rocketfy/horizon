@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\Horizon\Listeners;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Queue\Events\JobFailed as LaravelJobFailed;
 use Illuminate\Queue\Jobs\RedisJob;
-use Laravel\Horizon\Events\JobFailed;
+use Rocketfy\Horizon\Events\JobFailed;
 
 class MarshalFailedEvent
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\Horizon\Listeners;
 
 use Cake\Chronos\Chronos;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Events\MasterSupervisorLooped;
+use Rocketfy\Horizon\Contracts\JobRepository;
+use Rocketfy\Horizon\Events\MasterSupervisorLooped;
 
 class TrimMonitoredJobs
 {
@@ -25,7 +25,7 @@ class TrimMonitoredJobs
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\MasterSupervisorLooped  $event
+     * @param  \Rocketfy\Horizon\Events\MasterSupervisorLooped  $event
      * @return void
      */
     public function handle(MasterSupervisorLooped $event)

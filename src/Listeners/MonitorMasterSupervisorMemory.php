@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Rocketfy\Horizon\Listeners;
 
-use Laravel\Horizon\Events\MasterSupervisorLooped;
+use Rocketfy\Horizon\Events\MasterSupervisorLooped;
 
 class MonitorMasterSupervisorMemory
 {
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\MasterSupervisorLooped  $event
+     * @param  \Rocketfy\Horizon\Events\MasterSupervisorLooped  $event
      * @return void
      */
     public function handle(MasterSupervisorLooped $event)

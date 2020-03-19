@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Repositories;
+namespace Rocketfy\Horizon\Repositories;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
 use Illuminate\Support\Arr;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Supervisor;
+use Rocketfy\Horizon\Contracts\SupervisorRepository;
+use Rocketfy\Horizon\Supervisor;
 
 class RedisSupervisorRepository implements SupervisorRepository
 {
@@ -104,7 +104,7 @@ class RedisSupervisorRepository implements SupervisorRepository
     /**
      * Update the information about the given supervisor process.
      *
-     * @param  \Laravel\Horizon\Supervisor  $supervisor
+     * @param  \Rocketfy\Horizon\Supervisor  $supervisor
      * @return void
      */
     public function update(Supervisor $supervisor)

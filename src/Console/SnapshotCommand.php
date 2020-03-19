@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Rocketfy\Horizon\Console;
 
 use Illuminate\Console\Command;
-use Laravel\Horizon\Contracts\MetricsRepository;
-use Laravel\Horizon\Lock;
+use Rocketfy\Horizon\Contracts\MetricsRepository;
+use Rocketfy\Horizon\Lock;
 
 class SnapshotCommand extends Command
 {
@@ -25,8 +25,8 @@ class SnapshotCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param  \Laravel\Horizon\Lock  $lock
-     * @param  \Laravel\Horizon\Contracts\MetricsRepository  $metrics
+     * @param  \Rocketfy\Horizon\Lock  $lock
+     * @param  \Rocketfy\Horizon\Contracts\MetricsRepository  $metrics
      * @return void
      */
     public function handle(Lock $lock, MetricsRepository $metrics)

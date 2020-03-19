@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Http\Middleware;
+namespace Rocketfy\Horizon\Http\Middleware;
 
-use Laravel\Horizon\Horizon;
+use Rocketfy\Horizon\Horizon;
 
 class Authenticate
 {

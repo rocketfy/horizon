@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Jobs;
+namespace Rocketfy\Horizon\Jobs;
 
-use Laravel\Horizon\Contracts\TagRepository;
+use Rocketfy\Horizon\Contracts\TagRepository;
 
 class MonitorTag
 {
@@ -27,7 +27,7 @@ class MonitorTag
     /**
      * Execute the job.
      *
-     * @param  \Laravel\Horizon\Contracts\TagRepository  $tags
+     * @param  \Rocketfy\Horizon\Contracts\TagRepository  $tags
      * @return void
      */
     public function handle(TagRepository $tags)

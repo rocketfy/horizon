@@ -1,34 +1,34 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Rocketfy\Horizon\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\TagRepository;
-use Laravel\Horizon\Jobs\MonitorTag;
-use Laravel\Horizon\Jobs\StopMonitoringTag;
+use Rocketfy\Horizon\Contracts\JobRepository;
+use Rocketfy\Horizon\Contracts\TagRepository;
+use Rocketfy\Horizon\Jobs\MonitorTag;
+use Rocketfy\Horizon\Jobs\StopMonitoringTag;
 
 class MonitoringController extends Controller
 {
     /**
      * The job repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\JobRepository
+     * @var \Rocketfy\Horizon\Contracts\JobRepository
      */
     public $jobs;
 
     /**
      * The tag repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\TagRepository
+     * @var \Rocketfy\Horizon\Contracts\TagRepository
      */
     public $tags;
 
     /**
      * Create a new controller instance.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
-     * @param  \Laravel\Horizon\Contracts\TagRepository  $tags
+     * @param  \Rocketfy\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Rocketfy\Horizon\Contracts\TagRepository  $tags
      * @return void
      */
     public function __construct(JobRepository $jobs, TagRepository $tags)

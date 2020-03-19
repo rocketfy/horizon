@@ -1,18 +1,18 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\Horizon;
 
 use Cake\Chronos\Chronos;
 use Closure;
 use Exception;
 use Illuminate\Contracts\Cache\Factory as CacheFactory;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Contracts\Pausable;
-use Laravel\Horizon\Contracts\Restartable;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\Terminable;
-use Laravel\Horizon\Events\SupervisorLooped;
+use Rocketfy\Horizon\Contracts\HorizonCommandQueue;
+use Rocketfy\Horizon\Contracts\Pausable;
+use Rocketfy\Horizon\Contracts\Restartable;
+use Rocketfy\Horizon\Contracts\SupervisorRepository;
+use Rocketfy\Horizon\Contracts\Terminable;
+use Rocketfy\Horizon\Events\SupervisorLooped;
 use Symfony\Component\Debug\Exception\FatalThrowableError;
 use Throwable;
 
@@ -30,7 +30,7 @@ class Supervisor implements Pausable, Restartable, Terminable
     /**
      * The SupervisorOptions that should be utilized.
      *
-     * @var \Laravel\Horizon\SupervisorOptions
+     * @var \Rocketfy\Horizon\SupervisorOptions
      */
     public $options;
 
@@ -72,7 +72,7 @@ class Supervisor implements Pausable, Restartable, Terminable
     /**
      * Create a new supervisor instance.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Rocketfy\Horizon\SupervisorOptions  $options
      * @return void
      */
     public function __construct(SupervisorOptions $options)
@@ -125,8 +125,8 @@ class Supervisor implements Pausable, Restartable, Terminable
     /**
      * Create a new process pool with the given options.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
-     * @return \Laravel\Horizon\ProcessPool
+     * @param  \Rocketfy\Horizon\SupervisorOptions  $options
+     * @return \Rocketfy\Horizon\ProcessPool
      */
     protected function createProcessPool(SupervisorOptions $options)
     {

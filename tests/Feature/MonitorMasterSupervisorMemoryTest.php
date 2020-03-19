@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\Horizon\Tests\Feature;
 
-use Laravel\Horizon\Events\MasterSupervisorLooped;
-use Laravel\Horizon\Listeners\MonitorMasterSupervisorMemory;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\Horizon\Events\MasterSupervisorLooped;
+use Rocketfy\Horizon\Listeners\MonitorMasterSupervisorMemory;
+use Rocketfy\Horizon\MasterSupervisor;
+use Rocketfy\Horizon\Tests\IntegrationTest;
 use Mockery;
 
 class MonitorMasterSupervisorMemoryTest extends IntegrationTest

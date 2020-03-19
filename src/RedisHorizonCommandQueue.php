@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\Horizon;
 
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
+use Rocketfy\Horizon\Contracts\HorizonCommandQueue;
 
 class RedisHorizonCommandQueue implements HorizonCommandQueue
 {

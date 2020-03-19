@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\Horizon\Tests\Feature;
 
 use Cake\Chronos\Chronos;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Events\MasterSupervisorLooped;
-use Laravel\Horizon\Listeners\TrimMonitoredJobs;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\Horizon\Contracts\JobRepository;
+use Rocketfy\Horizon\Events\MasterSupervisorLooped;
+use Rocketfy\Horizon\Listeners\TrimMonitoredJobs;
+use Rocketfy\Horizon\MasterSupervisor;
+use Rocketfy\Horizon\Tests\IntegrationTest;
 use Mockery;
 
 class TrimMonitoredJobsTest extends IntegrationTest

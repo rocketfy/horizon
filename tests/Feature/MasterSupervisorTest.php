@@ -1,20 +1,20 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\Horizon\Tests\Feature;
 
 use Exception;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\MasterSupervisorCommands\AddSupervisor;
-use Laravel\Horizon\PhpBinary;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\SupervisorProcess;
-use Laravel\Horizon\Tests\Feature\Fixtures\EternalSupervisor;
-use Laravel\Horizon\Tests\Feature\Fixtures\SupervisorProcessWithFakeRestart;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\WorkerCommandString;
+use Rocketfy\Horizon\Contracts\HorizonCommandQueue;
+use Rocketfy\Horizon\Contracts\MasterSupervisorRepository;
+use Rocketfy\Horizon\MasterSupervisor;
+use Rocketfy\Horizon\MasterSupervisorCommands\AddSupervisor;
+use Rocketfy\Horizon\PhpBinary;
+use Rocketfy\Horizon\SupervisorOptions;
+use Rocketfy\Horizon\SupervisorProcess;
+use Rocketfy\Horizon\Tests\Feature\Fixtures\EternalSupervisor;
+use Rocketfy\Horizon\Tests\Feature\Fixtures\SupervisorProcessWithFakeRestart;
+use Rocketfy\Horizon\Tests\IntegrationTest;
+use Rocketfy\Horizon\WorkerCommandString;
 use Mockery;
 
 class MasterSupervisorTest extends IntegrationTest

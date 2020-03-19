@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Rocketfy\Horizon;
 
 use Cake\Chronos\Chronos;
 use Closure;
-use Laravel\Horizon\Events\UnableToLaunchProcess;
-use Laravel\Horizon\Events\WorkerProcessRestarting;
+use Rocketfy\Horizon\Events\UnableToLaunchProcess;
+use Rocketfy\Horizon\Events\WorkerProcessRestarting;
 use Symfony\Component\Process\Exception\ExceptionInterface;
 
 class WorkerProcess

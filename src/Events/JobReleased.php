@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Rocketfy\Horizon\Events;
 
 class JobReleased extends RedisEvent
 {

@@ -1,21 +1,21 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\Horizon\Tests\Feature;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Events\JobReserved;
-use Laravel\Horizon\Events\JobsMigrated;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\Horizon\Contracts\JobRepository;
+use Rocketfy\Horizon\Events\JobReserved;
+use Rocketfy\Horizon\Events\JobsMigrated;
+use Rocketfy\Horizon\Tests\IntegrationTest;
 
 class QueueProcessingTest extends IntegrationTest
 {
     public function test_legacy_jobs_can_be_processed_without_errors()
     {
-        Queue::push('Laravel\Horizon\Tests\Feature\Jobs\LegacyJob');
+        Queue::push('Rocketfy\Horizon\Tests\Feature\Jobs\LegacyJob');
         $this->work();
     }
 

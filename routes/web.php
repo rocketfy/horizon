@@ -35,4 +35,4 @@ Route::prefix('api')->group(function () {
 });
 
 // Catch-all Route...
-Route::get('/{view?}', 'HomeController@index')->where('view', '(.*)')->name('horizon.index');
+Route::get('/{view?}', 'HomeController@index')->where('view', '(.*)')->name('backetfy.horizon.index');

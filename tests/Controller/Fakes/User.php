@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Controller\Fakes;
+namespace Rocketfy\Horizon\Tests\Controller\Fakes;
 
 use Illuminate\Foundation\Auth\User as BaseUser;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Rocketfy\Horizon\Events;
 
-use Laravel\Horizon\JobPayload;
+use Rocketfy\Horizon\JobPayload;
 
 class JobsMigrated
 {

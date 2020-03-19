@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Unit;
+namespace Rocketfy\Horizon\Tests\Unit;
 
-use Laravel\Horizon\Stopwatch;
-use Laravel\Horizon\Tests\UnitTest;
+use Rocketfy\Horizon\Stopwatch;
+use Rocketfy\Horizon\Tests\UnitTest;
 
 class StopwatchTest extends UnitTest
 {

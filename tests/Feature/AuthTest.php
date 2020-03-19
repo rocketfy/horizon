@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\Horizon\Tests\Feature;
 
-use Laravel\Horizon\Horizon;
-use Laravel\Horizon\Http\Middleware\Authenticate;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Rocketfy\Horizon\Horizon;
+use Rocketfy\Horizon\Http\Middleware\Authenticate;
+use Rocketfy\Horizon\Tests\IntegrationTest;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 
 class AuthTest extends IntegrationTest

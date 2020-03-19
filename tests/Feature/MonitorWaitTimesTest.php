@@ -1,17 +1,17 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Rocketfy\Horizon\Tests\Feature;
 
 use Cake\Chronos\Chronos;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
 use Illuminate\Support\Facades\Event;
-use Laravel\Horizon\Contracts\MetricsRepository;
-use Laravel\Horizon\Events\LongWaitDetected;
-use Laravel\Horizon\Events\SupervisorLooped;
-use Laravel\Horizon\Listeners\MonitorWaitTimes;
-use Laravel\Horizon\Supervisor;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\WaitTimeCalculator;
+use Rocketfy\Horizon\Contracts\MetricsRepository;
+use Rocketfy\Horizon\Events\LongWaitDetected;
+use Rocketfy\Horizon\Events\SupervisorLooped;
+use Rocketfy\Horizon\Listeners\MonitorWaitTimes;
+use Rocketfy\Horizon\Supervisor;
+use Rocketfy\Horizon\Tests\IntegrationTest;
+use Rocketfy\Horizon\WaitTimeCalculator;
 use Mockery;
 
 class MonitorWaitTimesTest extends IntegrationTest

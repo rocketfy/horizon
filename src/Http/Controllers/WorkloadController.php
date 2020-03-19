@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Rocketfy\Horizon\Http\Controllers;
 
-use Laravel\Horizon\Contracts\WorkloadRepository;
+use Rocketfy\Horizon\Contracts\WorkloadRepository;
 
 class WorkloadController extends Controller
 {
     /**
      * Get the current queue workload for the application.
      *
-     * @param  \Laravel\Horizon\Contracts\WorkloadRepository  $workload
+     * @param  \Rocketfy\Horizon\Contracts\WorkloadRepository  $workload
      * @return array
      */
     public function index(WorkloadRepository $workload)
