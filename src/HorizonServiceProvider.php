@@ -7,6 +7,7 @@ use Illuminate\Queue\QueueManager;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Rocketfy\Horizon\Connectors\RedisConnector;
+use Rocketfy\Horizon\EventMap;
 
 class HorizonServiceProvider extends ServiceProvider
 {
