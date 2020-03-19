@@ -1,5 +1,5 @@
 {
-    "name": "rockerfy/horizon",
+    "name": "rocketfy/horizon",
     "description": "Rocketfy custom Laravel Horizon.",
     "keywords": ["rocketfy", "queue"],
     "license": "MIT",
