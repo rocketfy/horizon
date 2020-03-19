@@ -30,24 +30,24 @@
     },
     "autoload": {
         "psr-4": {
-            "Laravel\\Horizon\\": "src/"
+            "Rocketfy\\Horizon\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Laravel\\Horizon\\Tests\\": "tests/"
+            "Rocketfy\\Horizon\\Tests\\": "tests/"
         }
     },
     "extra": {
         "branch-alias": {
             "dev-master": "3.0-dev"
         },
-        "laravel": {
+        "rocketfy": {
             "providers": [
-                "Laravel\\Horizon\\HorizonServiceProvider"
+                "Rocketfy\\Horizon\\HorizonServiceProvider"
             ],
             "aliases": {
-                "Horizon": "Laravel\\Horizon\\Horizon"
+                "Horizon": "Rocketfy\\Horizon\\Horizon"
             }
         }
     },
