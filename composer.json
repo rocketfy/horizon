@@ -1,7 +1,7 @@
 {
     "name": "rocketfy/horizon",
-    "description": "Rocketfy custom Laravel Horizon.",
-    "keywords": ["rocketfy", "queue"],
+    "description": "Dashboard and code-driven configuration for Laravel queues.",
+    "keywords": ["laravel", "queue"],
     "license": "MIT",
     "authors": [
         {
@@ -30,24 +30,24 @@
     },
     "autoload": {
         "psr-4": {
-            "Rocketfy\\Horizon\\": "src/"
+            "Laravel\\Horizon\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Rocketfy\\Horizon\\Tests\\": "tests/"
+            "Laravel\\Horizon\\Tests\\": "tests/"
         }
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "rocketfy"
+            "dev-master": "3.0-dev"
         },
-        "rocketfy": {
+        "laravel": {
             "providers": [
-                "Rocketfy\\Horizon\\HorizonServiceProvider"
+                "Laravel\\Horizon\\HorizonServiceProvider"
             ],
             "aliases": {
-                "Horizon": "Rocketfy\\Horizon\\Horizon"
+                "Horizon": "Laravel\\Horizon\\Horizon"
             }
         }
     },
